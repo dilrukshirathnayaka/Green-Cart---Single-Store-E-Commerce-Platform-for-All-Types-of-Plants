@@ -4,302 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Shop indoor plants, outdoor plants, flowering plants and succulents at Green Cart.">
     <title>Green Cart | Bring Nature Home</title>
 
-    <meta name="description"
-          content="Discover beautiful indoor plants, outdoor plants, flowers and succulents at Green Cart.">
-
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">❧</span>
-            Green Cart<span class="logo-dot">.</span>
-        </a>
+<header class="navbar">
+    <a href="#home" class="logo">🌿 Green Cart<span>.</span></a>
 
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html" class="active">Home</a>
-            <a href="#categories">Categories</a>
-            <a href="#products">Shop</a>
-            <a href="#about">About Us</a>
-            <a href="#footer">Contact</a>
-        </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-        <div class="nav-actions">
-            <a href="#products" class="icon-link" aria-label="Search plants">⌕</a>
-            <a href="cart.html" class="cart-link">
-                🛒 <span id="cartCount">0</span>
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Shop Plants</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+        <a href="#products" class="cart-link">🛒 Cart <span id="cartCount">0</span></a>
+        <a href="#contact" class="login-link">Contact Us</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">WELCOME TO GREEN CART</span>
+            <h1>Bring Nature<br>Into Your <span>Home.</span></h1>
+            <p>Discover beautiful plants for every space. Make your home greener, fresher and happier with our hand-picked collection.</p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Plants →</a>
+                <a href="#categories" class="btn btn-secondary">Explore Categories</a>
+            </div>
+
+            <div class="hero-note">🌱 Find your perfect green companion</div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=85" alt="Beautiful green indoor plants">
+            <div class="image-badge">
+                <span>🌿</span>
+                <div><strong>Nature at home</strong><small>Grow your happy place</small></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="benefit"><span>🚚</span><div><h3>Careful Delivery</h3><p>Plants delivered with care</p></div></div>
+        <div class="benefit"><span>🌱</span><div><h3>Healthy Plants</h3><p>Selected with love</p></div></div>
+        <div class="benefit"><span>💚</span><div><h3>Plant Care Support</h3><p>Help for your green journey</p></div></div>
+    </section>
+
+    <section class="section" id="categories">
+        <div class="section-heading">
+            <div><span class="eyebrow">FIND YOUR GREEN</span><h2>Shop by Category</h2></div>
+            <a href="#products" class="text-link">Explore all →</a>
+        </div>
+
+        <div class="category-grid">
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80" alt="Indoor plants">
+                <h3>Indoor Plants</h3><p>Green up your space</p>
             </a>
-            <a href="login.html" class="login-link">Login</a>
-            <button class="menu-toggle" id="menuToggle"
-                    aria-label="Toggle navigation">☰</button>
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=500&q=80" alt="Outdoor plants">
+                <h3>Outdoor Plants</h3><p>Bring life to gardens</p>
+            </a>
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=80" alt="Flowering plants">
+                <h3>Flowering Plants</h3><p>Add colour to life</p>
+            </a>
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=500&q=80" alt="Succulents">
+                <h3>Succulents</h3><p>Small plants, big joy</p>
+            </a>
         </div>
-    </header>
+    </section>
 
-    <main>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <span class="eyebrow">WELCOME TO GREEN CART</span>
-
-                <h1>Bring Nature<br>Into Your <span>Home.</span></h1>
-
-                <p>
-                    Discover beautiful plants for every space.
-                    Make your home greener, fresher and happier
-                    with our hand-picked collection.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">
-                        Shop Plants <span>→</span>
-                    </a>
-
-                    <a href="#categories" class="btn btn-secondary">
-                        Explore Categories
-                    </a>
-                </div>
-
-                <div class="hero-note">
-                    <span>🌱</span>
-                    <span>Find your perfect green companion</span>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img
-                    src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=85"
-                    alt="Beautiful green indoor plants"
-                >
-                <div class="image-badge">
-                    <span class="badge-icon">🌿</span>
-                    <div>
-                        <strong>Nature at home</strong>
-                        <small>Grow your happy place</small>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefits -->
-        <section class="benefits">
-            <div class="benefit">
-                <span>🚚</span>
-                <div>
-                    <h3>Careful Delivery</h3>
-                    <p>Plants delivered with care</p>
-                </div>
-            </div>
-
-            <div class="benefit">
-                <span>🌱</span>
-                <div>
-                    <h3>Healthy Plants</h3>
-                    <p>Selected with love</p>
-                </div>
-            </div>
-
-            <div class="benefit">
-                <span>💚</span>
-                <div>
-                    <h3>Plant Care Support</h3>
-                    <p>Help for your green journey</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Categories -->
-        <section class="section" id="categories">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">FIND YOUR GREEN</span>
-                    <h2>Shop by Category</h2>
-                </div>
-                <a href="#products" class="text-link">Explore all →</a>
-            </div>
-
-            <div class="category-grid">
-                <a href="#products" class="category-card">
-                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80" alt="Indoor plants">
-                    <h3>Indoor Plants</h3>
-                    <p>Green up your space</p>
-                </a>
-
-                <a href="#products" class="category-card">
-                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=500&q=80" alt="Outdoor plants">
-                    <h3>Outdoor Plants</h3>
-                    <p>Bring life to gardens</p>
-                </a>
-
-                <a href="#products" class="category-card">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=80" alt="Flowering plants">
-                    <h3>Flowering Plants</h3>
-                    <p>Add colour to life</p>
-                </a>
-
-                <a href="#products" class="category-card">
-                    <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=500&q=80" alt="Succulents">
-                    <h3>Succulents</h3>
-                    <p>Small plants, big joy</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- Featured Products -->
-        <section class="section products-section" id="products">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">OUR COLLECTION</span>
-                    <h2>Featured Plants</h2>
-                    <p class="section-description">
-                        Meet your next favourite plant.
-                    </p>
-                </div>
-                <a href="#products" class="text-link">View all →</a>
-            </div>
-
-            <div class="product-grid">
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-tag">Popular</span>
-                        <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80" alt="Monstera plant">
-                        <button class="wishlist" aria-label="Add Monstera to wishlist">♡</button>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Indoor Plant</p>
-                        <h3>Monstera Deliciosa</h3>
-                        <div class="product-bottom">
-                            <strong>Rs. 2,500</strong>
-                            <button class="add-cart" data-name="Monstera Deliciosa" data-price="2500">+</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=600&q=80" alt="Peace lily plant">
-                        <button class="wishlist" aria-label="Add Peace Lily to wishlist">♡</button>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Indoor Plant</p>
-                        <h3>Peace Lily</h3>
-                        <div class="product-bottom">
-                            <strong>Rs. 1,800</strong>
-                            <button class="add-cart" data-name="Peace Lily" data-price="1800">+</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-tag new-tag">New</span>
-                        <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80" alt="Aloe Vera plant">
-                        <button class="wishlist" aria-label="Add Aloe Vera to wishlist">♡</button>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Succulent</p>
-                        <h3>Aloe Vera</h3>
-                        <div class="product-bottom">
-                            <strong>Rs. 950</strong>
-                            <button class="add-cart" data-name="Aloe Vera" data-price="950">+</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="Decorative potted plant">
-                        <button class="wishlist" aria-label="Add Green Companion to wishlist">♡</button>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-category">Decorative Plant</p>
-                        <h3>Green Companion</h3>
-                        <div class="product-bottom">
-                            <strong>Rs. 1,500</strong>
-                            <button class="add-cart" data-name="Green Companion" data-price="1500">+</button>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- About / Promo -->
-        <section class="about-banner" id="about">
+    <section class="section products-section" id="products">
+        <div class="section-heading">
             <div>
-                <span class="eyebrow">A LITTLE MORE GREEN</span>
-                <h2>Make Room for Nature.</h2>
-                <p>
-                    Every plant brings a little more life into your world.
-                    Start your green journey with Green Cart.
-                </p>
-                <a href="#products" class="btn btn-light">Find Your Plant →</a>
-            </div>
-            <div class="about-decoration">🌿</div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <a href="index.html" class="logo footer-logo">
-                    <span class="logo-icon">❧</span>
-                    Green Cart<span class="logo-dot">.</span>
-                </a>
-                <p>
-                    Helping you bring nature closer to home,
-                    one beautiful plant at a time.
-                </p>
-            </div>
-
-            <div>
-                <h3>Quick Links</h3>
-                <a href="index.html">Home</a>
-                <a href="#products">Shop Plants</a>
-                <a href="#categories">Categories</a>
-                <a href="#about">About Us</a>
-            </div>
-
-            <div>
-                <h3>Customer Care</h3>
-                <a href="#footer">Contact Us</a>
-                <a href="#footer">Delivery Information</a>
-                <a href="#footer">Plant Care Guide</a>
-            </div>
-
-            <div>
-                <h3>Stay Connected</h3>
-                <p>Get plant care tips and updates.</p>
-                <form class="subscribe-form" id="subscribeForm">
-                    <input type="email" placeholder="Your email address"
-                           aria-label="Your email address" required>
-                    <button type="submit" aria-label="Subscribe">→</button>
-                </form>
-                <p id="subscribeMessage" class="subscribe-message"></p>
+                <span class="eyebrow">OUR COLLECTION</span>
+                <h2>Featured Plants</h2>
+                <p class="section-description">Meet your next favourite plant.</p>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> Green Cart. All rights reserved.</p>
-            <p>Made with 💚 for plant lovers.</p>
-        </div>
-    </footer>
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="product-image">
+                    <span class="product-tag">Popular</span>
+                    <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80" alt="Monstera plant">
+                    <button class="wishlist" aria-label="Add Monstera to wishlist">♡</button>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Indoor Plant</p>
+                    <h3>Monstera Deliciosa</h3>
+                    <div class="product-bottom"><strong>Rs. 2,500</strong><button class="add-cart" data-name="Monstera Deliciosa" data-price="2500">+</button></div>
+                </div>
+            </article>
 
-    <script src="script.js"></script>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=600&q=80" alt="Peace Lily plant">
+                    <button class="wishlist" aria-label="Add Peace Lily to wishlist">♡</button>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Indoor Plant</p>
+                    <h3>Peace Lily</h3>
+                    <div class="product-bottom"><strong>Rs. 1,800</strong><button class="add-cart" data-name="Peace Lily" data-price="1800">+</button></div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <span class="product-tag new-tag">New</span>
+                    <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=600&q=80" alt="Succulent plant">
+                    <button class="wishlist" aria-label="Add Succulent to wishlist">♡</button>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Succulent</p>
+                    <h3>Garden Succulent</h3>
+                    <div class="product-bottom"><strong>Rs. 950</strong><button class="add-cart" data-name="Garden Succulent" data-price="950">+</button></div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="Decorative potted plant">
+                    <button class="wishlist" aria-label="Add Green Companion to wishlist">♡</button>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Decorative Plant</p>
+                    <h3>Green Companion</h3>
+                    <div class="product-bottom"><strong>Rs. 1,500</strong><button class="add-cart" data-name="Green Companion" data-price="1500">+</button></div>
+                </div>
+            </article>
+        </div>
+        <p class="demo-note">Sample products and prices for the frontend demo.</p>
+    </section>
+
+    <section class="about-banner" id="about">
+        <div>
+            <span class="eyebrow">A LITTLE MORE GREEN</span>
+            <h2>Make Room for Nature.</h2>
+            <p>Every plant brings a little more life into your world. Start your green journey with Green Cart.</p>
+            <a href="#products" class="btn btn-light">Find Your Plant →</a>
+        </div>
+        <div class="about-decoration" aria-hidden="true">🌿</div>
+    </section>
+</main>
+
+<footer class="footer" id="contact">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="#home" class="logo footer-logo">🌿 Green Cart<span>.</span></a>
+            <p>Helping you bring nature closer to home, one beautiful plant at a time.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a><a href="#products">Shop Plants</a>
+            <a href="#categories">Categories</a><a href="#about">About Us</a>
+        </div>
+
+        <div>
+            <h3>Customer Care</h3>
+            <a href="#contact">Contact Us</a><a href="#contact">Delivery Information</a>
+            <a href="#contact">Plant Care Guide</a>
+        </div>
+
+        <div>
+            <h3>Stay Connected</h3>
+            <p>Sign up for plant care tips and updates.</p>
+            <form class="subscribe-form" id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Your email address" aria-label="Your email address" required>
+                <button type="submit" aria-label="Subscribe">→</button>
+            </form>
+            <p id="subscribeMessage" class="subscribe-message" aria-live="polite"></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© <span id="year"></span> Green Cart. All rights reserved.</p>
+        <p>Made with 💚 for plant lovers.</p>
+    </div>
+</footer>
+
 </body>
 </html>
