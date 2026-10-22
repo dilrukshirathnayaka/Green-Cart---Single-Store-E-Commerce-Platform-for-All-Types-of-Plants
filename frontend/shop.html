@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Plants | Green Cart</title>
+  <meta name="description" content="Explore indoor plants, outdoor plants, succulents and flowering plants at Green Cart.">
+  <link rel="stylesheet" href="shop.css">
+  <script src="shop.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">🌿 Green Cart</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop Plants</a>
+      <a href="#categories">Categories</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="cart-link" href="#products">
+        🛒 Cart <span id="cartCount">0</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <p class="eyebrow">GROW SOMETHING BEAUTIFUL</p>
+      <h1>Shop All <span>Plants</span></h1>
+      <p>Bring nature home. Find the perfect green companion for every space.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Shop Plants</span>
+      </div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR FAVOURITE</p>
+          <h2>Shop by Category</h2>
+        </div>
+      </div>
+
+      <div class="category-list">
+        <button class="category-btn selected" data-category="All">🌿 All Plants</button>
+        <button class="category-btn" data-category="Indoor">🪴 Indoor</button>
+        <button class="category-btn" data-category="Outdoor">🌳 Outdoor</button>
+        <button class="category-btn" data-category="Succulents">🌵 Succulents</button>
+        <button class="category-btn" data-category="Flowering">🌸 Flowering</button>
+      </div>
+    </section>
+
+    <section class="products-section section" id="products">
+      <div class="products-toolbar">
+        <div>
+          <h2>Our Plants</h2>
+          <p id="productCount">Loading plants...</p>
+        </div>
+
+        <div class="product-controls">
+          <label class="search-box">
+            <span>⌕</span>
+            <input type="search" id="searchInput"
+              placeholder="Search plants..." aria-label="Search plants">
+          </label>
+
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div>🪴</div>
+        <h3>No plants found</h3>
+        <p>Try another search term or category.</p>
+        <button class="primary-btn" id="resetFilters">Show All Plants</button>
+      </div>
+    </section>
+
+    <section class="care-banner">
+      <div>
+        <p class="eyebrow">A LITTLE GREEN GOES A LONG WAY</p>
+        <h2>Not sure which plant is right for you?</h2>
+        <p>Start with a plant that fits your space and lifestyle.</p>
+      </div>
+      <a href="index.html" class="light-btn">Explore Green Cart</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="index.html">🌿 Green Cart</a>
+    <p>Make your world a little greener, one plant at a time.</p>
+    <p class="copyright">© <span id="currentYear"></span> Green Cart. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
