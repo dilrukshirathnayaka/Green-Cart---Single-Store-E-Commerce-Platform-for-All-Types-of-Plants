@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Green Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <header class="cart-header">
+    <a class="logo" href="index.html">🌿 Green Cart</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Continue Shopping</a>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <div class="page-heading">
+      <p class="eyebrow">YOUR GREEN PICKS</p>
+      <h1>Shopping Cart</h1>
+      <p>Review your plants before checking out.</p>
+    </div>
+
+    <div class="cart-layout">
+      <section class="cart-items-section">
+        <div class="cart-section-heading">
+          <h2>Your Items</h2>
+          <span id="itemCount">0 items</span>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="empty-cart" id="emptyCart" hidden>
+          <div class="empty-icon">🪴</div>
+          <h2>Your cart is waiting to grow!</h2>
+          <p>You haven't added any plants yet.</p>
+          <a class="primary-btn" href="shop.html">Explore Plants</a>
+        </div>
+
+        <a href="shop.html" class="back-link">← Continue Shopping</a>
+      </section>
+
+      <aside class="order-summary">
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+          <span>Items</span>
+          <span id="summaryItems">0</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">LKR 0</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Delivery</span>
+          <span>Calculated later</span>
+        </div>
+
+        <div class="summary-total">
+          <span>Total</span>
+          <span id="total">LKR 0</span>
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn" type="button">
+          Proceed to Checkout →
+        </button>
+
+        <p class="secure-note">🌱 Thank you for choosing Green Cart!</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="cart-footer">
+    <p>© <span id="currentYear"></span> Green Cart. Grow something beautiful.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
