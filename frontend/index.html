@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="Discover beautiful indoor plants, flowering plants, bonsai, medicinal plants and more at Green Cart. Find the perfect plant for your space.">
+  <title>Green Cart | Bring Nature Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    <p><i class="fa-solid fa-leaf"></i> A little more green, a little more life. <span>Discover your next favourite plant.</span></p>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="Green Cart home">
+        <span class="brand-icon"><i class="fa-solid fa-seedling"></i></span>
+        <span class="brand-copy">
+          <strong>green cart</strong>
+          <small>GROW YOUR OWN PARADISE</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="shop.html">Shop Plants</a>
+        <a class="nav-link" href="#categories">Categories</a>
+        <a class="nav-link" href="#plant-finder">Plant Finder</a>
+        <a class="nav-link" href="#care">Plant Care</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" aria-label="Show search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a class="icon-button wishlist-header" href="#featured" aria-label="Discover favourite plants">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a class="cart-button" href="cart.html" aria-label="Shopping cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel" hidden>
+      <form id="searchForm" class="container search-form">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="siteSearch" type="search" placeholder="Search plants, bonsai, flowers..." aria-label="Search plants">
+        <button type="submit" class="button button-primary">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Lush green plants in a bright, peaceful home"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow light-eyebrow"><span></span> YOUR EVERYDAY PLANT DESTINATION</span>
+        <h1>Bring home a little<br>piece of <em>nature.</em></h1>
+        <p>From leafy indoor companions to blooming garden favourites, find plants that make your space feel more alive.</p>
+        <div class="hero-actions">
+          <a href="shop.html" class="button button-light">Explore plants <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#plant-finder" class="hero-text-link">Find my perfect plant <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="hero-note">
+          <span class="hero-note-icon"><i class="fa-solid fa-seedling"></i></span>
+          <span><strong>Grow at your own pace</strong><small>Helpful plant care at every step</small></span>
+        </div>
+      </div>
+      <div class="hero-side-label">GROW SOMETHING BEAUTIFUL · GREEN CART</div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item"><i class="fa-solid fa-leaf"></i><span><strong>Plants for every space</strong><small>Small corners to big gardens</small></span></div>
+        <div class="trust-item"><i class="fa-solid fa-droplet"></i><span><strong>Care made simple</strong><small>Guidance for every plant parent</small></span></div>
+        <div class="trust-item"><i class="fa-solid fa-box-open"></i><span><strong>Thoughtful delivery</strong><small>Live-plant handling information</small></span></div>
+        <div class="trust-item"><i class="fa-solid fa-seedling"></i><span><strong>Find your green</strong><small>Choose plants for your lifestyle</small></span></div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">EXPLORE THE COLLECTION</span>
+            <h2>A plant for every <em>personality.</em></h2>
+            <p>Whether you love leafy corners or colourful blooms, there is something here for you.</p>
+          </div>
+          <a class="text-link desktop-link" href="shop.html">View all plants <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="category-grid">
+          <a class="category-card" href="shop.html?category=Indoor">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=650&q=85" alt="Indoor green plants" loading="lazy">
+            <span class="category-number">01</span>
+            <span class="category-info"><strong>Indoor Plants</strong><small>Bring the outdoors in <i class="fa-solid fa-arrow-right"></i></small></span>
+          </a>
+          <a class="category-card" href="shop.html?category=Flowering">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=650&q=85" alt="Beautiful flowering plants" loading="lazy">
+            <span class="category-number">02</span>
+            <span class="category-info"><strong>Flowering Plants</strong><small>A little burst of colour <i class="fa-solid fa-arrow-right"></i></small></span>
+          </a>
+          <a class="category-card" href="shop.html?category=Succulents">
+            <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=650&q=85" alt="Succulent plants in pots" loading="lazy">
+            <span class="category-number">03</span>
+            <span class="category-info"><strong>Succulents</strong><small>Small plants, big charm <i class="fa-solid fa-arrow-right"></i></small></span>
+          </a>
+          <a class="category-card" href="shop.html?category=Outdoor">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=650&q=85" alt="Outdoor garden plants" loading="lazy">
+            <span class="category-number">04</span>
+            <span class="category-info"><strong>Outdoor Plants</strong><small>Grow your green escape <i class="fa-solid fa-arrow-right"></i></small></span>
+          </a>
+          <a class="category-card" href="shop.html?category=Medicinal">
+            <img src="https://images.unsplash.com/photo-1618164436241-4473940d1f5c?auto=format&fit=crop&w=650&q=85" alt="Herbs and green foliage" loading="lazy">
+            <span class="category-number">05</span>
+            <span class="category-info"><strong>Herbs & Medicinal</strong><small>Discover useful greenery <i class="fa-solid fa-arrow-right"></i></small></span>
+          </a>
+          <a class="category-card" href="shop.html?category=Bonsai">
+            <img src="https://images.unsplash.com/photo-1578307985689-1a9a2c2a0e0c?auto=format&fit=crop&w=650&q=85" alt="Bonsai tree collection" loading="lazy">
+            <span class="category-number">06</span>
+            <span class="category-info"><strong>Bonsai & Rare</strong><small>Something truly special <i class="fa-solid fa-arrow-right"></i></small></span>
+          </a>
+        </div>
+        <a class="text-link mobile-link" href="shop.html">Explore all categories <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">A FEW GREEN FAVOURITES</span>
+            <h2>Meet your new <em>plant friends.</em></h2>
+            <p>Explore a hand-picked sample of plants for different spaces and lifestyles.</p>
+          </div>
+          <a href="shop.html" class="text-link desktop-link">Shop all plants <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="filter-row" id="featuredFilters" aria-label="Filter featured plants">
+          <button class="filter-chip active" data-filter="All">All plants</button>
+          <button class="filter-chip" data-filter="Indoor">Indoor</button>
+          <button class="filter-chip" data-filter="Flowering">Flowering</button>
+          <button class="filter-chip" data-filter="Succulents">Succulents</button>
+          <button class="filter-chip" data-filter="Outdoor">Outdoor</button>
+        </div>
+
+        <div class="product-grid" id="featuredProducts">
+          <div class="loading-message">Growing our collection...</div>
+        </div>
+        <div class="center-action"><a href="shop.html" class="button button-outline">Explore the full collection <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </section>
+
+    <section class="finder-section section" id="plant-finder">
+      <div class="container finder-layout">
+        <div class="finder-image">
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1000&q=85" alt="A peaceful home filled with leafy indoor plants" loading="lazy">
+          <div class="finder-image-note"><i class="fa-solid fa-sun"></i><span><strong>Your space. Your sunlight.</strong><small>Let's find the right fit.</small></span></div>
+        </div>
+        <div class="finder-content">
+          <span class="eyebrow">MEET YOUR PLANT MATCH</span>
+          <h2>Not sure what will grow where you live?</h2>
+          <p>Tell us about your space and we'll suggest plants worth exploring. A bright balcony and a low-light bedroom need different kinds of green.</p>
+          <form id="plantFinderForm" class="finder-form">
+            <label for="plantLocation">Where will your plant live?</label>
+            <select id="plantLocation" required>
+              <option value="">Choose your space</option>
+              <option value="Living room">Living room</option>
+              <option value="Bedroom">Bedroom</option>
+              <option value="Balcony">Balcony</option>
+              <option value="Office desk">Office desk or shelf</option>
+              <option value="Outdoor garden">Outdoor garden</option>
+              <option value="Medicinal garden">Herb or medicinal garden</option>
+            </select>
+
+            <label for="plantLight">How much natural light does it get?</label>
+            <select id="plantLight" required>
+              <option value="">Choose sunlight</option>
+              <option value="Low">Low / indirect light</option>
+              <option value="Medium">Medium / bright indirect light</option>
+              <option value="High">Direct or strong sunlight</option>
+            </select>
+
+            <label for="plantCare">How much care can you give?</label>
+            <select id="plantCare" required>
+              <option value="">Choose your care level</option>
+              <option value="Easy">Easy care — I'm a beginner</option>
+              <option value="Moderate">Some care — I enjoy gardening</option>
+              <option value="Advanced">Advanced — I love a challenge</option>
+            </select>
+
+            <button type="submit" class="button button-primary button-full">Find my plant match <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div class="finder-results" id="finderResults" aria-live="polite" hidden></div>
+          <p class="fine-print">Suggestions are based on general plant preferences. Check the individual plant's care guide before buying.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-banner" id="care">
+      <div class="container care-banner-inner">
+        <div class="care-copy">
+          <span class="eyebrow light-eyebrow">A LITTLE KNOW-HOW GOES A LONG WAY</span>
+          <h2>Happy plants start<br>with <em>simple care.</em></h2>
+          <p>Learn about sunlight, watering, soil and choosing plants that suit your everyday routine.</p>
+          <a href="shop.html" class="button button-light">Explore plants & care <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="care-features">
+          <div><span><i class="fa-solid fa-sun"></i></span><strong>Light</strong><small>Find the right spot</small></div>
+          <div><span><i class="fa-solid fa-droplet"></i></span><strong>Water</strong><small>Understand watering needs</small></div>
+          <div><span><i class="fa-solid fa-mountain"></i></span><strong>Soil</strong><small>Choose a suitable mix</small></div>
+          <div><span><i class="fa-solid fa-heart"></i></span><strong>Patience</strong><small>Grow at nature's pace</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section section">
+      <div class="container newsletter-inner">
+        <div>
+          <span class="eyebrow">A GREENER INBOX</span>
+          <h2>Let's grow something <em>good.</em></h2>
+          <p>Plant inspiration and care tips, delivered occasionally.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input id="newsletterEmail" type="email" placeholder="Your email address" required>
+          <button type="submit" class="button button-primary">Join us <i class="fa-solid fa-arrow-right"></i></button>
+          <small id="newsletterMessage" aria-live="polite">No spam. Just a little green inspiration.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-icon"><i class="fa-solid fa-seedling"></i></span>
+          <span class="brand-copy"><strong>green cart</strong><small>GROW YOUR OWN PARADISE</small></span>
+        </a>
+        <p>Thoughtfully chosen plants to bring more life, calm and character into your everyday spaces.</p>
+        <div class="social-links">
+          <a href="#footer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#footer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#footer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-column"><h3>Explore</h3><a href="shop.html">All plants</a><a href="#categories">Plant categories</a><a href="#plant-finder">Plant finder</a><a href="#care">Plant care</a></div>
+      <div class="footer-column"><h3>Customer care</h3><a href="cart.html">Your cart</a><a href="login.html">Your account</a><a href="#footer">Delivery information</a><a href="#footer">Contact us</a></div>
+      <div class="footer-column"><h3>Our promise</h3><p>Helpful care information</p><p>Thoughtful plant selection</p><p>Better green living</p></div>
+    </div>
+    <div class="footer-bottom" id="footer">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="currentYear"></span> Green Cart. Grow something beautiful.</span>
+        <span>Made with <i class="fa-solid fa-heart"></i> for plant lovers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
